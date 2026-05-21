@@ -74,6 +74,10 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center gap-4">
+              <a href="tel:+13303389293" className="text-white hover:text-primary transition font-bold text-lg flex items-center gap-1.5">
+                <Phone className="w-5 h-5" />
+                (330) 338-9293
+              </a>
               <Link href="/get-quote" className="bg-primary text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition shadow-sm">
                 BOOK NOW
               </Link>
@@ -139,6 +143,9 @@ export default function Navbar() {
         <Link href="/contact" className="block py-3 font-medium text-lg text-white hover:text-primary transition border-b border-white/5" onClick={() => setMobileOpen(false)}>Contact</Link>
 
         <div className="pt-4 space-y-3">
+          <a href="tel:+13303389293" className="flex items-center gap-2 font-bold text-white text-lg hover:text-primary transition">
+            <Phone className="w-5 h-5" /> (330) 338-9293
+          </a>
           <Link href="/get-quote" className="block text-center bg-primary text-white px-5 py-3 rounded-lg font-semibold hover:bg-primary-dark transition" onClick={() => setMobileOpen(false)}>BOOK NOW</Link>
         </div>
       </div>

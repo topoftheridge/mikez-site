@@ -26,12 +26,12 @@ export default function Hero({ title, subtitle, showCTA = true }: HeroProps) {
               >
                 BOOK NOW
               </Link>
-              <Link
-                href="/about"
+              <a
+                href="tel:+13303389293"
                 className="inline-flex items-center justify-center bg-white/10 backdrop-blur text-white font-bold px-8 py-4 rounded-lg hover:bg-white/20 transition border border-white/20 text-lg"
               >
-                LEARN MORE
-              </Link>
+                CALL (330) 338-9293
+              </a>
             </div>
           )}
         </div>

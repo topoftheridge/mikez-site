@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { locations } from "@/data/locations";
 
 export default function Footer() {
@@ -16,6 +16,7 @@ export default function Footer() {
             <p className="text-sm mb-4">Professional mobile car detailing in Stow, OH and Summit County. We come to you!</p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-primary" /> Stow, OH (Summit County)</div>
+              <div className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" /> <a href="tel:+13303389293" className="hover:text-primary transition">(330) 338-9293</a></div>
               <div className="flex items-center gap-2"><Clock className="w-4 h-4 text-primary" /> Mon–Sun: 8 AM – 6 PM</div>
               <div className="flex items-center gap-2"><Mail className="w-4 h-4 text-primary" /> <a href="https://mikezmobiledetailing.com" className="hover:text-primary transition">mikezmobiledetailing.com</a></div>
             </div>

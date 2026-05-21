@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us | Mikez Mobile Detailing",
@@ -23,6 +23,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-6">
             {[
+              { icon: <Phone className="w-6 h-6" />, label: "Phone", content: <a href="tel:+13303389293" className="text-white hover:text-primary transition font-semibold">(330) 338-9293</a> },
               { icon: <MapPin className="w-6 h-6" />, label: "Location", content: <span className="text-white">Stow, OH (Summit County) — We come to you!</span> },
               { icon: <Clock className="w-6 h-6" />, label: "Hours", content: <span className="text-white">Monday – Sunday: 8:00 AM – 6:00 PM</span> },
               { icon: <Mail className="w-6 h-6" />, label: "Website", content: (

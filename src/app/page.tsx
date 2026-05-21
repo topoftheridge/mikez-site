@@ -12,7 +12,7 @@ export default function HomePage() {
     name: "Mikez Mobile Detailing LLC",
     description: "Professional mobile car detailing in Stow, OH and Summit County. We come to you at home or work. Fully insured.",
     url: "https://mikezmobiledetailing.com",
-    telephone: "",
+    telephone: "+13303389293",
     email: "",
     address: {
       "@type": "PostalAddress",
@@ -107,7 +107,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Interior Detailing */}
             <Link href="/services/interior-detailing" className="group relative rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition min-h-[320px] flex flex-col justify-center">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/interiorcard1.jpg')" }} />
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/mikesmobiledetailingcard.png')" }} />
               <div className="absolute inset-0 bg-black/60" />
               <div className="relative p-8 flex flex-col items-start gap-3">
                 <h3 className="text-3xl lg:text-4xl font-bold text-white leading-tight">Interior Detailing</h3>
@@ -131,7 +131,7 @@ export default function HomePage() {
 
             {/* Paint Enhancement */}
             <Link href="/services/paint-protection" className="group relative rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition min-h-[320px] flex flex-col justify-center">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/Paintcard1.jpg')" }} />
+              <div className="absolute inset-0" style={{ backgroundImage: "url('/Paintcard1.jpg')", backgroundSize: "160%", backgroundPosition: "65% 40%" }} />
               <div className="absolute inset-0 bg-black/60" />
               <div className="relative p-8 flex flex-col items-start gap-3">
                 <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">Paint Enhancement &amp;&nbsp;Protection</h3>
@@ -219,11 +219,12 @@ export default function HomePage() {
             Fill out the form above or get in touch — we&apos;ll come to you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/get-quote" className="inline-flex items-center justify-center bg-primary text-white font-bold px-8 py-4 rounded-lg hover:bg-primary-dark transition text-lg">
+            <a href="tel:+13303389293" className="inline-flex items-center justify-center bg-primary text-white font-bold px-8 py-4 rounded-lg hover:bg-primary-dark transition text-lg">
+              Call (330) 338-9293
+            </a>
+            <span className="text-gray-500">or</span>
+            <Link href="/get-quote" className="inline-flex items-center justify-center bg-white/10 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/20 transition border border-white/20 text-lg">
               BOOK NOW
-            </Link>
-            <Link href="/contact" className="inline-flex items-center justify-center bg-white/10 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/20 transition border border-white/20 text-lg">
-              CONTACT US
             </Link>
           </div>
           <div className="mt-8 text-sm text-gray-500">

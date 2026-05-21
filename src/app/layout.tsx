@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Mikez Mobile Detailing",
   },
   description:
-    "Professional mobile car detailing in Stow, OH and Summit County. We come to you! Interior & exterior detailing, paint correction, full detail packages. Fully insured. Book today!",
+    "Professional mobile car detailing in Stow, OH and Summit County. We come to you! Interior & exterior detailing, paint correction, full detail packages. Fully insured. Call (330) 338-9293 or book today!",
   keywords: [
     "mobile detailing Stow OH",
     "mobile car detailing Summit County",

@@ -4,7 +4,7 @@ export default function HeroBackground({ children }: { children: React.ReactNode
   return (
     <div className="relative overflow-hidden">
       <Image
-        src="/heropic1.jpg"
+        src="/mikesmobiledetailingheaderbg.png"
         alt=""
         fill
         className="object-cover object-right-center sm:object-center"

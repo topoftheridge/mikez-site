@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <>
       <div className="relative overflow-hidden">
-        <Image src="/aboutcard1.jpg" alt="" fill className="object-cover object-[70%_70%] sm:object-[center_70%]" priority />
+        <Image src="/mikesmobiledetailingabout.png" alt="" fill className="object-cover object-[70%_70%] sm:object-[center_70%]" priority />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative">
           <Hero
@@ -24,9 +24,9 @@ export default function AboutPage() {
             <Link href="/get-quote" className="inline-flex items-center justify-center bg-primary text-white font-bold px-8 py-4 rounded-lg hover:bg-primary-dark transition text-lg">
               BOOK NOW
             </Link>
-            <Link href="/contact" className="inline-flex items-center justify-center bg-white/10 backdrop-blur text-white font-bold px-8 py-4 rounded-lg hover:bg-white/20 transition border border-white/20 text-lg">
-              Contact Us
-            </Link>
+            <a href="tel:+13303389293" className="inline-flex items-center justify-center bg-white/10 backdrop-blur text-white font-bold px-8 py-4 rounded-lg hover:bg-white/20 transition border border-white/20 text-lg">
+              Call (330) 338-9293
+            </a>
           </div>
         </div>
       </div>
