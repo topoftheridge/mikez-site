@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <Image src="/logoheader.png" alt="Car Candy Auto Detailing" width={170} height={100} className="h-14 lg:h-[72px] w-auto" priority />
+            <Image src="/logoheader.png" alt="Mikez Mobile Detailing" width={170} height={100} className="h-14 lg:h-[72px] w-auto" priority />
           </Link>
 
           {/* Desktop Nav */}
@@ -63,7 +63,7 @@ export default function Navbar() {
                           href={`/${loc.slug}`}
                           className="block px-4 py-2.5 text-base text-gray-300 hover:bg-primary/20 hover:text-primary transition"
                         >
-                          {loc.name}, PA
+                          {loc.name}, OH
                         </Link>
                       ))}
                     </div>
@@ -74,14 +74,7 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center gap-4">
-              <a href="tel:+16107260151" className="text-white hover:text-primary transition font-bold text-lg flex items-center gap-1.5">
-                <Phone className="w-5 h-5" />
-                (610) 726-0151
-              </a>
-              <Link
-                href="/get-quote"
-                className="bg-primary text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition shadow-sm"
-              >
+              <Link href="/get-quote" className="bg-primary text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition shadow-sm">
                 BOOK NOW
               </Link>
             </div>
@@ -96,7 +89,6 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-
     </nav>
 
     {/* Mobile Menu Overlay */}
@@ -112,8 +104,7 @@ export default function Navbar() {
       <div className="px-6 pb-8 space-y-1">
         <Link href="/" className="block py-3 font-medium text-lg text-white hover:text-primary transition border-b border-white/5" onClick={() => setMobileOpen(false)}>Home</Link>
         <Link href="/about" className="block py-3 font-medium text-lg text-white hover:text-primary transition border-b border-white/5" onClick={() => setMobileOpen(false)}>About</Link>
-        
-        {/* Services Accordion */}
+
         <div className="border-b border-white/5">
           <button className="w-full py-3 font-medium text-lg text-white hover:text-primary transition flex items-center justify-between" onClick={() => setMobileServicesOpen(!mobileServicesOpen)}>
             Services
@@ -129,7 +120,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Areas Accordion */}
         <div className="border-b border-white/5">
           <button className="w-full py-3 font-medium text-lg text-white hover:text-primary transition flex items-center justify-between" onClick={() => setMobileAreasOpen(!mobileAreasOpen)}>
             Areas Served
@@ -139,7 +129,7 @@ export default function Navbar() {
             <div className="pl-4 space-y-2">
               {locations.map((loc) => (
                 <Link key={loc.slug} href={`/${loc.slug}`} className="block text-base text-gray-400 hover:text-primary transition" onClick={() => setMobileOpen(false)}>
-                  {loc.name}, PA
+                  {loc.name}, OH
                 </Link>
               ))}
             </div>
@@ -147,11 +137,8 @@ export default function Navbar() {
         </div>
 
         <Link href="/contact" className="block py-3 font-medium text-lg text-white hover:text-primary transition border-b border-white/5" onClick={() => setMobileOpen(false)}>Contact</Link>
-        
+
         <div className="pt-4 space-y-3">
-          <a href="tel:+16107260151" className="flex items-center gap-2 font-bold text-white text-lg hover:text-primary transition">
-            <Phone className="w-5 h-5" /> (610) 726-0151
-          </a>
           <Link href="/get-quote" className="block text-center bg-primary text-white px-5 py-3 rounded-lg font-semibold hover:bg-primary-dark transition" onClick={() => setMobileOpen(false)}>BOOK NOW</Link>
         </div>
       </div>

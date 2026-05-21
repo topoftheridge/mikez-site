@@ -8,17 +8,19 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: {
-    default: "Car Candy Auto Detailing | Professional Auto Detailing in Aston, PA",
-    template: "%s | Car Candy Auto Detailing",
+    default: "Mikez Mobile Detailing | Professional Mobile Car Detailing in Stow, OH",
+    template: "%s | Mikez Mobile Detailing",
   },
   description:
-    "Professional auto detailing services in Aston, PA and Delaware County. Interior & exterior detailing, waxing, paint correction. Call (610) 726-0151.",
+    "Professional mobile car detailing in Stow, OH and Summit County. We come to you! Interior & exterior detailing, paint correction, full detail packages. Fully insured. Book today!",
   keywords: [
-    "auto detailing Aston PA",
-    "car detailing Delaware County",
+    "mobile detailing Stow OH",
+    "mobile car detailing Summit County",
+    "mobile detailing Akron OH",
     "interior detailing",
     "exterior detailing",
-    "Car Candy Auto Detailing",
+    "Mikez Mobile Detailing",
+    "Michael Zukas detailing",
   ],
   icons: {
     icon: [
